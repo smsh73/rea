@@ -34,6 +34,11 @@
     "access": "public"
   },
   "type": "module",
+  "exports": {
+    "./domain/*": "./dist/domain/*",
+    "./application/*": "./dist/application/*",
+    "./package.json": "./package.json"
+  },
   "imports": {
     "#javascript-analysis-worker": "./dist/composition/javascriptAnalysisWorkerProcess.js",
     "#web-bundle-analysis-worker": "./dist/composition/webBundleAnalysisWorkerProcess.js"
